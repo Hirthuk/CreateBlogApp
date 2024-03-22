@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Blog</title>
+    <link rel="stylesheet" href="write.css">
+    
+    
+</head>
+
+
+<body>
+    <h1 >Write your Thoughts</h1>
+    <%- include("partials/header.ejs") %>
+    <form class="form" action="View" method="post" >
+        <input class="TitleBox" name="Title" type="text" placeholder="Enter the title of your Blog">
+        <textarea class="ContentBox" name="Content" placeholder="Enter your Thoughts"></textarea>
+        <button class="WriteButton" type="submit">Save your Thoughts</button>
+    </form>
+    
+    <%- include("partials/footer.ejs") %>
+    
+</body>
+</html>

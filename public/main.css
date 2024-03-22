@@ -1,0 +1,102 @@
+body {
+    text-align: center; /* Center-aligns text within the body */
+    font-family: Arial, sans-serif; /* Specify the font family */
+    background-color: #6499E9;
+    overflow: hidden;
+}
+
+h1 {
+    color: black; /* Set the text color */
+    /* Set the background color */
+     /* Add padding for better visual appearance */
+    font-size: 80px;
+    position: relative;
+    top: -30px;
+    
+}
+
+
+    
+
+.page{
+    font-weight: 900;
+    font-size: 40px;
+    color: black;
+    text-decoration: wavy;
+    padding-inline-start: 30px;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+a:hover{
+    color: blue;
+    transform:scale(1.1);
+    
+}
+
+
+
+.links{
+    background-color: #BEFFF7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    top: 180px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -130px;
+    transition: transform 0.2s ease-in-out;
+}
+.links :hover{
+    transform:scale(1.1);
+}
+.imageIcon{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding-inline: 30px;
+    
+}
+
+.header-div{
+    background-color: #9EDDFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    top: -70px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.buttonCheck {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-size: 20px;
+    line-height: 150px;
+    display: inline-block;  /* Prevent buttons from stacking vertically */
+    text-align: center;  /* Center text horizontally */
+}
+  button:hover{
+    color: blue;
+    transform: scale(1.1);
+    
+  }
+
+  .buttons {
+    margin-top: -20px;
+    margin-bottom: -60px;
+    background-color: #A6F6FF;
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;  /* Use flexbox to align buttons in a row */
+    justify-content: center;  /* Center the buttons horizontally */
+    align-items: center;  /* Center the buttons vertically */
+}
+  

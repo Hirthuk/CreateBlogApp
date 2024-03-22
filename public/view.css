@@ -1,0 +1,56 @@
+
+
+/* view.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.Heading {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.Box {
+    margin: 20px;
+    border: 2px solid #333;
+    padding: 10px;
+}
+
+.Title {
+    background-color: #f0f0f0;
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.Content {
+    margin-top: 10px;
+    height: 30vh; /* 30% of viewport height */
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.WriteButton {
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+    margin-top: 5px;
+    
+}
+.WriteButton:hover{
+    color: black;
+}

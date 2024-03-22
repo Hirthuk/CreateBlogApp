@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Page</title>
+    <link rel="stylesheet" href="view.css">
+    <!-- Add any additional styles or scripts you need in the head section -->
+</head>
+<body>
+    <!-- Header section -->
+    <h1 class="Heading">Explore Thoughts</h1>
+
+    <!-- Check if there are blogs to display -->
+    <% if (blogs && blogs.length > 0) { %>
+        <!-- Loop through each blog in the blogs array -->
+        <% blogs.forEach(blog => { %>
+            <!-- Blog container -->
+            <div class="Box">
+                <!-- Title section of the blog -->
+                <div class="Title">
+                    <!-- Displaying the title of the blog -->
+                    <h2 class="TitleFont"><%= "Title: " + blog.title %></h2>
+                </div>
+
+                <!-- Content section of the blog -->
+                <div class="Content">
+                    <!-- Displaying the content of the blog -->
+                    <p class="ContentFont"><%= blog.content %></p>
+                </div>
+
+                <!-- Buttons for Update and Delete -->
+                <form action="/update/<%= blog.id %>" method="post">
+                    <label for="UpdatedTitle">Updated Title:</label>
+                    <input type="text" id="UpdatedTitle" name="UpdatedTitle" required>
+                    <label for="UpdatedContent">Updated Content:</label>
+                    <textarea id="UpdatedContent" name="UpdatedContent" required></textarea>
+                    <button type="submit" class="WriteButton">Update</button>
+                </form>
+
+                <form action="/delete/<%= blog.id %>" method="post">
+                    <button type="submit" class="WriteButton">Delete</button>
+                </form>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <!-- Display a message if there are no blogs -->
+        <h2><%= error %></h2>
+    <% } %>
+
+    <!-- Check if there is a title in locals, indicating a recently saved blog -->
+    <!-- It is working so alter the correct statement in else -->
+    <% if (locals.title) { %>
+        <!-- Display a confirmation message with a link to the home page -->
+        <h1 class="Heading">You Haven't created Any Blog. Use write thoughts option to create your blog here <br><a href="/">Home page</a></h1>
+        
+    <% } else { %>
+        <!-- Display a message if no recent blog is available -->
+        <h1 class="Heading">Your blog has been saved.<br><a href="/">Home page</a></h1>
+    <% } %>
+
+</body>
+</html>

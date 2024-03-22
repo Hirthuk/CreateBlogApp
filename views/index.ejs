@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Blog</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="png">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <h1>Creative Blog</h1>
+    <%- include("partials/header.ejs") %>
+    <div class="buttons">
+    <form  action="/write" method="get"><button  class = "buttonCheck" >Write Thoughts</button>
+        </form>
+  
+        <form  action="/View" method="get">
+            <button  class = "buttonCheck" >View Blogs</button>
+            <button class="buttonCheck">Delete Blog</button>
+            <button class="buttonCheck">Update a Blog</button>
+        </form>
+        
+  
+
+    </div>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>
